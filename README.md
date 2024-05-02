@@ -1,2 +1,1 @@
-# javascript-basics
-Javascript basic practices
+<h1>Learn React with Typescript</h1>
