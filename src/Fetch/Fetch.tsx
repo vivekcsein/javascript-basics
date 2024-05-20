@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Fetch = () => {
   return (
     <div>
       <ul className="w-full  flex flex-row flex-wrap overflow-hidden gap-4 text-2xl underline ">
@@ -8,14 +8,18 @@ const Home = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/hooks">Hooks</Link>
+          <Link to="/fetch/fetchdatausingpromises">
+            Fetch Data Using Promises
+          </Link>
         </li>
         <li>
-          <Link to="/fetch">Fetch</Link>
+          <Link to="/fetch/fetchdatausingasyncawait">
+            Fetch Data Using Async-Await
+          </Link>
         </li>
       </ul>
     </div>
   );
 };
 
-export default Home;
+export default Fetch;
