@@ -4,6 +4,8 @@ import Hooks from "../Hooks/Hooks";
 import HooksRouter from "../Hooks/HooksRouter";
 import Fetch from "../Fetch/Fetch";
 import FetchRouter from "../Fetch/FetchRouter";
+import Children from "../Children/Children";
+import ChildrenRouter from "../Children/ChildrenRouter";
 
 const AppRouter = () => {
   return (
@@ -16,6 +18,10 @@ const AppRouter = () => {
       <Route path="/fetch">
         <Route index element={<Fetch />} />
         <Route path=":id" element={<FetchRouter />} />
+      </Route>
+      <Route path="/children">
+        <Route index element={<Children />} />
+        <Route path=":id" element={<ChildrenRouter />} />
       </Route>
     </Routes>
   );
